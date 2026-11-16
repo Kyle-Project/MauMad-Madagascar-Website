@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MauMad Tours | Small-group tours in Madagascar</title>
+  <meta name="description" content="Small-group and private tours across Madagascar: baobabs, rainforests, lemurs and island beaches, guided by local experts.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#top" class="logo">Mau<span>Mad</span> Tours</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links">
+        <a href="#tours">Tours</a>
+        <a href="#why">Why us</a>
+        <a href="#how">How it works</a>
+        <a href="#contact" class="btn btn-small">Enquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Madagascar, your way</p>
+        <h1>Baobabs, lemurs and island beaches, guided by people who live here.</h1>
+        <p class="lead">Small-group and private tours across the island, with local guides, comfortable lodges and no rushing.</p>
+        <div class="hero-actions">
+          <a href="#tours" class="btn">See our tours</a>
+          <a href="#contact" class="btn btn-ghost">Plan a custom trip</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tours" class="section">
+      <div class="container">
+        <h2>Featured tours</h2>
+        <p class="section-lead">Every itinerary can be adjusted to your dates, pace and budget.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="card-img img-baobab" role="img" aria-label="Baobab trees at sunset"></div>
+            <div class="card-body">
+              <p class="tag">5 days · Easy</p>
+              <h3>Avenue of the Baobabs</h3>
+              <p>Sunset among giant baobabs near Morondava, a pirogue trip on the river and a visit to Kirindy forest for fossa and sifakas.</p>
+              <a href="#contact" class="card-link" data-tour="Avenue of the Baobabs">Ask about this tour →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img img-forest" role="img" aria-label="Misty rainforest"></div>
+            <div class="card-body">
+              <p class="tag">7 days · Moderate</p>
+              <h3>Rainforest &amp; Lemurs</h3>
+              <p>Day and night walks in Ranomafana and Andasibe national parks, looking for lemurs, chameleons and rare birds with expert guides.</p>
+              <a href="#contact" class="card-link" data-tour="Rainforest &amp; Lemurs">Ask about this tour →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img img-beach" role="img" aria-label="Turquoise sea and white sand"></div>
+            <div class="card-body">
+              <p class="tag">6 days · Relaxed</p>
+              <h3>Nosy Be Island Escape</h3>
+              <p>Snorkelling, island-hopping by boat and slow beach days in the north-west. A good way to finish a longer trip.</p>
+              <a href="#contact" class="card-link" data-tour="Nosy Be Island Escape">Ask about this tour →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section section-alt">
+      <div class="container">
+        <h2>Why travel with us</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Local guides</h3>
+            <p>Our guides grew up near the parks they show you, and they speak English and French.</p>
+          </div>
+          <div class="feature">
+            <h3>Small groups</h3>
+            <p>No more than eight travellers per group, or go private with just your own party.</p>
+          </div>
+          <div class="feature">
+            <h3>Responsible travel</h3>
+            <p>We work with community-run lodges and local suppliers, so your trip supports the places you visit.</p>
+          </div>
+          <div class="feature">
+            <h3>Help on the ground</h3>
+            <p>A local contact is reachable throughout your trip, from airport pickup to your last day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong>Tell us your plans.</strong> Send your dates, group size and what you'd like to see.</li>
+          <li><strong>Get an itinerary.</strong> We reply with a day-by-day plan and a clear price.</li>
+          <li><strong>Travel.</strong> We handle transport, lodges and guides, so you can enjoy the trip.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact">
+        <div>
+          <h2>Plan your trip</h2>
+          <p class="section-lead">Fill in the form and we'll reply within two working days.</p>
+        </div>
+        <form id="enquiry-form" class="form" novalidate>
+          <label>Name
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>Email
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <div class="form-row">
+            <label>Travel month
+              <input type="month" name="month">
+            </label>
+            <label>Travellers
+              <input type="number" name="travellers" min="1" max="20" value="2">
+            </label>
+          </div>
+          <label>Tour
+            <select name="tour" id="tour-select">
+              <option value="">Not sure yet / custom trip</option>
+              <option>Avenue of the Baobabs</option>
+              <option>Rainforest &amp; Lemurs</option>
+              <option>Nosy Be Island Escape</option>
+            </select>
+          </label>
+          <label>Message
+            <textarea name="message" rows="4" placeholder="Anything we should know?"></textarea>
+          </label>
+          <button type="submit" class="btn">Send enquiry</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> MauMad Tours · Madagascar</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
