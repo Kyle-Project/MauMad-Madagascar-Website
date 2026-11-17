@@ -3,115 +3,281 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MauMad Tours | Small-group tours in Madagascar</title>
-  <meta name="description" content="Small-group and private tours across Madagascar: baobabs, rainforests, lemurs and island beaches, guided by local experts.">
+  <title>MauMad | Madagascar &amp; Mauritius Tour Operator</title>
+  <meta name="description" content="MauMad runs guided trips in Madagascar and Mauritius: a 7-day nature and culture hike from Ambalavao to Ranomafana, and a 6-day Mauritius island tour.">
+  <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="#top" class="logo">Mau<span>Mad</span> Tours</a>
+      <a href="#top" class="logo" aria-label="MauMad home">
+        <img src="images/logo.png" alt="MauMad – Madagascar &amp; Maurice Tour Operator" width="56" height="56">
+        <span>MauMad</span>
+      </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
       <nav id="nav-links" class="nav-links">
-        <a href="#tours">Tours</a>
-        <a href="#why">Why us</a>
-        <a href="#how">How it works</a>
-        <a href="#contact" class="btn btn-small">Enquire</a>
+        <a href="#madagascar">Madagascar</a>
+        <a href="#mauritius">Mauritius</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact" class="btn btn-small">Contact us</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
+    <!-- Hero -->
     <section class="hero">
       <div class="container hero-inner">
-        <p class="eyebrow">Madagascar, your way</p>
-        <h1>Baobabs, lemurs and island beaches, guided by people who live here.</h1>
-        <p class="lead">Small-group and private tours across the island, with local guides, comfortable lodges and no rushing.</p>
+        <p class="eyebrow">Madagascar &amp; Mauritius tour operator</p>
+        <h1>Lemurs, rainforest and island beaches, with a local team that knows the way.</h1>
+        <p class="lead">Guided small-group trips with hotels, meals, transport and park fees arranged for you.</p>
         <div class="hero-actions">
-          <a href="#tours" class="btn">See our tours</a>
-          <a href="#contact" class="btn btn-ghost">Plan a custom trip</a>
+          <a href="#tours" class="btn">See our trips</a>
+          <a href="#contact" class="btn btn-ghost">Ask a question</a>
         </div>
       </div>
     </section>
 
+    <!-- Trip overview -->
     <section id="tours" class="section">
       <div class="container">
-        <h2>Featured tours</h2>
-        <p class="section-lead">Every itinerary can be adjusted to your dates, pace and budget.</p>
+        <h2>Our trips</h2>
+        <p class="section-lead">Two ready-made itineraries, with prices per person that include almost everything.</p>
         <div class="cards">
           <article class="card">
-            <div class="card-img img-baobab" role="img" aria-label="Baobab trees at sunset"></div>
+            <img class="card-img" src="images/anja-hike.jpg" alt="Hikers walking towards granite peaks near Ambalavao" loading="lazy">
             <div class="card-body">
-              <p class="tag">5 days · Easy</p>
-              <h3>Avenue of the Baobabs</h3>
-              <p>Sunset among giant baobabs near Morondava, a pirogue trip on the river and a visit to Kirindy forest for fossa and sifakas.</p>
-              <a href="#contact" class="card-link" data-tour="Avenue of the Baobabs">Ask about this tour →</a>
+              <p class="tag">Madagascar · 7 days</p>
+              <h3>Nature &amp; Cultural Hike: Ambalavao to Ranomafana</h3>
+              <p>Ring-tailed lemurs in Anja reserve, rainforest hikes in Ranomafana National Park, Betsileo and Antanala villages, and craft workshops in Ambositra and Antsirabe.</p>
+              <p class="price">From <strong>$1,000</strong> per person</p>
+              <a href="#madagascar" class="card-link">See the itinerary →</a>
             </div>
           </article>
           <article class="card">
-            <div class="card-img img-forest" role="img" aria-label="Misty rainforest"></div>
+            <img class="card-img" src="images/grand-bassin.jpg" alt="Giant statue at Grand Bassin, Mauritius" loading="lazy">
             <div class="card-body">
-              <p class="tag">7 days · Moderate</p>
-              <h3>Rainforest &amp; Lemurs</h3>
-              <p>Day and night walks in Ranomafana and Andasibe national parks, looking for lemurs, chameleons and rare birds with expert guides.</p>
-              <a href="#contact" class="card-link" data-tour="Rainforest &amp; Lemurs">Ask about this tour →</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-img img-beach" role="img" aria-label="Turquoise sea and white sand"></div>
-            <div class="card-body">
-              <p class="tag">6 days · Relaxed</p>
-              <h3>Nosy Be Island Escape</h3>
-              <p>Snorkelling, island-hopping by boat and slow beach days in the north-west. A good way to finish a longer trip.</p>
-              <a href="#contact" class="card-link" data-tour="Nosy Be Island Escape">Ask about this tour →</a>
+              <p class="tag">Mauritius · 6 days / 5 nights</p>
+              <h3>Mauritius Island Tour</h3>
+              <p>The wild south and Chamarel, a boat day at Île aux Cerfs, Casela and Port Louis, and a sunset catamaran dinner, all with full board.</p>
+              <p class="price">From <strong>$1,700</strong> or <strong>4,990,000 MGA</strong> per adult</p>
+              <a href="#mauritius" class="card-link">See the itinerary →</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="why" class="section section-alt">
+    <!-- Madagascar trip -->
+    <section id="madagascar" class="section section-alt">
       <div class="container">
-        <h2>Why travel with us</h2>
-        <div class="features">
-          <div class="feature">
-            <h3>Local guides</h3>
-            <p>Our guides grew up near the parks they show you, and they speak English and French.</p>
+        <p class="eyebrow eyebrow-dark">Madagascar · 7 days</p>
+        <h2>Nature &amp; Cultural Hike: Ambalavao to Ranomafana</h2>
+        <p class="section-lead">From the capital through the Betsileo highlands to one of Madagascar's richest rainforests and back. Expect a mix of paved and bumpy roads.</p>
+
+        <div class="gallery">
+          <img src="images/hero.jpg" alt="Ring-tailed lemur" loading="lazy">
+          <img src="images/golden-lemur.jpg" alt="Bamboo lemur in Ranomafana rainforest" loading="lazy">
+          <img src="images/betsileo-village.jpg" alt="Traditional wooden houses on stilts" loading="lazy">
+          <img src="images/ranomafana-river.jpg" alt="Forested river valley in Ranomafana" loading="lazy">
+          <img src="images/leaf-gecko.jpg" alt="Leaf-tailed gecko on a branch" loading="lazy">
+          <img src="images/antsirabe.jpg" alt="Colonial-era railway station in Antsirabe" loading="lazy">
+        </div>
+
+        <div class="itinerary">
+          <details>
+            <summary><span class="day">Arrival</span> Welcome to Antananarivo</summary>
+            <p>Transfer to your hotel, trip briefing and dinner.</p>
+          </details>
+          <details>
+            <summary><span class="day">Day 1</span> Antananarivo to Antsirabe</summary>
+            <p>City tour and the Royal Palace, then a 150 km drive to Antsirabe. Lunch on the way and a relaxed afternoon at the hotel.</p>
+            <ul class="facts"><li>Driving: about 5 hours, plus stops</li><li>Overnight: Plumeria Hôtel or Arotel, Antsirabe</li></ul>
+          </details>
+          <details>
+            <summary><span class="day">Day 2</span> Into Betsileo country: Antsirabe to Ambalavao</summary>
+            <p>A scenic 250 km drive south. Stop in Ambositra, known for its woodcarving, to visit a workshop and have lunch. Then on through rolling highlands, terraced rice fields and Betsileo villages to a peaceful countryside lodge near Anja Community Reserve.</p>
+            <ul class="facts"><li>Driving: about 7 hours, plus stops</li><li>Meals: breakfast, lunch, dinner</li><li>Overnight: Betsileo Country Lodge</li></ul>
+          </details>
+          <details>
+            <summary><span class="day">Day 3</span> Anja Community Reserve, then on to Ranomafana</summary>
+            <p>A 1 to 2 hour guided walk through granite rock formations and dry forest at the foot of the Andringitra mountains. Anja is a community-run reserve known for its large population of ring-tailed lemurs. Your local guide shares Betsileo customs, medicinal plants and the sacred caves of the reserve. Suitable for all fitness levels.</p>
+            <p>After lunch there are optional visits to Ambalavao's silk workshops or its handmade paper workshop, before heading east to the rainforest.</p>
+            <ul class="facts"><li>Meals: breakfast, lunch, dinner</li><li>Overnight: Ihary Hotel or Le Grenat Hotel</li></ul>
+          </details>
+          <details>
+            <summary><span class="day">Day 4</span> Ranomafana National Park</summary>
+            <p>A 3 to 4 hour guided hike through misty rainforest trails, looking for lemurs, including the golden bamboo lemur found only in this area, plus chameleons, rare birds and exotic plants. In the afternoon, relax at the lodge or visit a local vanilla plantation and meet the growers.</p>
+            <ul class="facts"><li>Hiking: about 3 to 4 hours</li><li>Optional: vanilla plantation visit</li><li>Meals: breakfast, lunch, dinner</li><li>Overnight: Ihary Hotel or Le Grenat Hotel</li></ul>
+          </details>
+          <details>
+            <summary><span class="day">Day 5</span> Antanala village and thermal springs</summary>
+            <p>Visit a nearby Antanala village. The Antanala are the "people of the forest". If the weather allows, you'll get there by canoe. Meet local families and learn about their customs, cooking and medicinal plants. In the afternoon, visit Ranomafana's natural thermal springs and historic spa, with the option of a swim. An optional night walk looks for nocturnal animals.</p>
+            <ul class="facts"><li>Optional: canoe ride (weather permitting), night walk</li><li>Meals: breakfast, lunch, dinner</li><li>Overnight: Ihary Hotel or Le Grenat Hotel</li></ul>
+          </details>
+          <details>
+            <summary><span class="day">Day 6</span> Morning birdwatching, then the road to Antsirabe</summary>
+            <p>An optional early walk to spot endemic birds at the forest edge. After breakfast, a long, scenic drive back through rice fields and highland villages, arriving in Antsirabe in the late afternoon.</p>
+            <ul class="facts"><li>Driving: about 7 hours, plus stops</li><li>Meals: breakfast, lunch, dinner</li><li>Overnight: Plumeria Hôtel or Arotel, Antsirabe</li></ul>
+          </details>
+          <details>
+            <summary><span class="day">Day 7</span> Antsirabe workshops and return to Antananarivo</summary>
+            <p>Explore Antsirabe's colonial architecture and visit artisans who turn zebu horn into jewellery and decorations, and workshops that cut and polish local stones like rose quartz, labradorite and amethyst. Then a 4 to 5 hour drive back to the capital.</p>
+            <ul class="facts"><li>Meals: breakfast, lunch, dinner</li><li>Overnight: Urban Hotel, Antananarivo</li></ul>
+          </details>
+          <details>
+            <summary><span class="day">Departure</span> Airport transfer</summary>
+            <p>Depending on your flight time, an optional visit to a local art gallery for last souvenirs, then your transfer to the airport. Meals today are not included.</p>
+          </details>
+        </div>
+
+        <div class="pricing">
+          <div class="price-box">
+            <h3>Price per person</h3>
+            <table>
+              <tbody>
+                <tr><td>1 to 3 travellers</td><td>$1,500</td></tr>
+                <tr><td>4 to 6 travellers</td><td>$1,300</td></tr>
+                <tr><td>7 to 10 travellers</td><td>$1,150</td></tr>
+                <tr><td>More than 10 travellers</td><td>$1,000</td></tr>
+                <tr><td>Children 2 to 10 years</td><td>$900</td></tr>
+                <tr><td>Babies 0 to 23 months</td><td>Free</td></tr>
+              </tbody>
+            </table>
           </div>
-          <div class="feature">
-            <h3>Small groups</h3>
-            <p>No more than eight travellers per group, or go private with just your own party.</p>
-          </div>
-          <div class="feature">
-            <h3>Responsible travel</h3>
-            <p>We work with community-run lodges and local suppliers, so your trip supports the places you visit.</p>
-          </div>
-          <div class="feature">
-            <h3>Help on the ground</h3>
-            <p>A local contact is reachable throughout your trip, from airport pickup to your last day.</p>
+          <div class="price-box">
+            <h3>Included</h3>
+            <ul class="check">
+              <li>Return flight Mauritius – Antananarivo (MRU–TNR–MRU)</li>
+              <li>Hotels</li>
+              <li>Breakfast, lunch and dinner</li>
+              <li>Transport (private vehicle)</li>
+              <li>Guide and assistant</li>
+              <li>Drinking water</li>
+              <li>Park fees and visits</li>
+            </ul>
+            <h3>Not included</h3>
+            <ul class="cross">
+              <li>Drinks</li>
+              <li>Tips</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="how" class="section">
+    <!-- Mauritius trip -->
+    <section id="mauritius" class="section">
       <div class="container">
-        <h2>How it works</h2>
-        <ol class="steps">
-          <li><strong>Tell us your plans.</strong> Send your dates, group size and what you'd like to see.</li>
-          <li><strong>Get an itinerary.</strong> We reply with a day-by-day plan and a clear price.</li>
-          <li><strong>Travel.</strong> We handle transport, lodges and guides, so you can enjoy the trip.</li>
-        </ol>
+        <p class="eyebrow eyebrow-dark">Mauritius · 6 days / 5 nights</p>
+        <h2>Mauritius Island Tour</h2>
+        <p class="section-lead">Waterfalls, temples and coloured earth in the south, a boat day on the east coast, and a sunset catamaran to finish. Water and snacks are provided on every excursion day.</p>
+
+        <div class="gallery gallery-3">
+          <img src="images/grand-bassin.jpg" alt="Grand Bassin statue and temples" loading="lazy">
+          <img src="images/chamarel.jpg" alt="Seven Coloured Earths at Chamarel" loading="lazy">
+          <img src="images/aquarium.jpg" alt="Visitors in an aquarium tunnel" loading="lazy">
+        </div>
+
+        <div class="itinerary">
+          <details>
+            <summary><span class="day">Day 1</span> Arrival</summary>
+            <p>Airport welcome, transfer to your hotel and dinner.</p>
+          </details>
+          <details>
+            <summary><span class="day">Day 2</span> South tour</summary>
+            <p>Leave at 8 am for Grand Bassin and its temples, the Alexandra Falls viewpoint, Chamarel village, mountain and waterfall, the Seven Coloured Earths, then Île aux Bénitiers and Le Morne Brabant. Picnic lunch, and dinner back at the hotel.</p>
+          </details>
+          <details>
+            <summary><span class="day">Day 3</span> Île aux Cerfs</summary>
+            <p>Board a boat to the Grande Rivière Sud-Est (GRSE) waterfall, go snorkelling, then enjoy a barbecue picnic lunch on Île aux Cerfs. Return to the hotel for dinner. Parasailing and tube rides are available at extra cost.</p>
+          </details>
+          <details>
+            <summary><span class="day">Day 4</span> West tour</summary>
+            <p>Leave at 8 am for the Casela nature park and safari, then Chinatown and the Caudan Waterfront in Port Louis. Dinner and transfer back to the hotel.</p>
+          </details>
+          <details>
+            <summary><span class="day">Day 5</span> North tour and sunset catamaran</summary>
+            <p>Leave at 8:30 am for the botanical garden and Cap Malheureux. In the afternoon, beach time and a catamaran cruise with barbecue, sunset and dinner on board, then back to the hotel.</p>
+          </details>
+          <details>
+            <summary><span class="day">Day 6</span> Departure</summary>
+            <p>Lunch, last-minute shopping, and transfer to the airport (arrive 3 hours before your flight).</p>
+          </details>
+        </div>
+
+        <div class="pricing">
+          <div class="price-box">
+            <h3>Departing from Madagascar</h3>
+            <table>
+              <tbody>
+                <tr><td>Adult</td><td>4,990,000 MGA</td></tr>
+                <tr><td>Child 2 to 10 years</td><td>3,800,000 MGA</td></tr>
+                <tr><td>Baby 0 to 23 months</td><td>Free</td></tr>
+              </tbody>
+            </table>
+            <h4>Included</h4>
+            <ul class="check">
+              <li>Return flight Antananarivo – Mauritius</li>
+              <li>Airport and activity transfers</li>
+              <li>Accommodation, full board</li>
+              <li>Water and snacks</li>
+              <li>Guide</li>
+            </ul>
+            <h4>Not included</h4>
+            <ul class="cross"><li>Drinks</li><li>Tips</li></ul>
+          </div>
+          <div class="price-box">
+            <h3>Joining from abroad</h3>
+            <table>
+              <tbody>
+                <tr><td>Adult</td><td>$1,700</td></tr>
+                <tr><td>Child 2 to 10 years</td><td>$1,490</td></tr>
+                <tr><td>Baby 0 to 23 months</td><td>Free</td></tr>
+              </tbody>
+            </table>
+            <h4>Included</h4>
+            <ul class="check">
+              <li>Airport and activity transfers</li>
+              <li>Accommodation, full board</li>
+              <li>3 lunches (days 2, 3 and 6)</li>
+              <li>Water and snacks</li>
+              <li>Guide</li>
+            </ul>
+            <h4>Not included</h4>
+            <ul class="cross"><li>International flights</li><li>Drinks</li><li>Tips</li><li>Lunch on days 4 and 5</li></ul>
+          </div>
+        </div>
+        <p class="note">Departures run on set dates. Contact us for the next available dates.</p>
       </div>
     </section>
 
-    <section id="contact" class="section section-alt">
+    <!-- Booking -->
+    <section id="booking" class="section section-alt">
+      <div class="container narrow">
+        <h2>Booking &amp; cancellation</h2>
+        <ul class="policy">
+          <li>Trips must be paid in full in advance to confirm your place.</li>
+          <li>Cancel at least 30 days before departure for a full refund.</li>
+          <li>Cancellations less than 30 days before departure have a 50% cancellation fee.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
       <div class="container contact">
         <div>
-          <h2>Plan your trip</h2>
-          <p class="section-lead">Fill in the form and we'll reply within two working days.</p>
+          <h2>Contact us</h2>
+          <p class="section-lead">Tell us which trip you're interested in, your dates and how many people are travelling.</p>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:resa.maumad@gmail.com">resa.maumad@gmail.com</a></li>
+            <li><span>WhatsApp / mobile</span><a href="https://wa.me/261328748753" target="_blank" rel="noopener">+261 32 87 487 53</a></li>
+            <li><span>WhatsApp / mobile</span><a href="https://wa.me/261349955051" target="_blank" rel="noopener">+261 34 99 550 51</a></li>
+          </ul>
         </div>
         <form id="enquiry-form" class="form" novalidate>
           <label>Name
@@ -121,25 +287,24 @@
             <input type="email" name="email" required autocomplete="email">
           </label>
           <div class="form-row">
-            <label>Travel month
-              <input type="month" name="month">
+            <label>Trip
+              <select name="trip">
+                <option>Madagascar: Nature &amp; Cultural Hike</option>
+                <option>Mauritius Island Tour</option>
+                <option>Something else</option>
+              </select>
             </label>
             <label>Travellers
-              <input type="number" name="travellers" min="1" max="20" value="2">
+              <input type="number" name="travellers" min="1" max="50" value="2">
             </label>
           </div>
-          <label>Tour
-            <select name="tour" id="tour-select">
-              <option value="">Not sure yet / custom trip</option>
-              <option>Avenue of the Baobabs</option>
-              <option>Rainforest &amp; Lemurs</option>
-              <option>Nosy Be Island Escape</option>
-            </select>
+          <label>Preferred dates
+            <input type="text" name="dates" placeholder="e.g. July 2027">
           </label>
           <label>Message
             <textarea name="message" rows="4" placeholder="Anything we should know?"></textarea>
           </label>
-          <button type="submit" class="btn">Send enquiry</button>
+          <button type="submit" class="btn">Send by email</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -148,7 +313,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> MauMad Tours · Madagascar</p>
+      <p>&copy; <span id="year"></span> MauMad · Madagascar &amp; Maurice Tour Operator</p>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>

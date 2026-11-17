@@ -1,5 +1,4 @@
-// Set this to a form service URL (e.g. Formspree) to receive enquiries by email.
-const FORM_ENDPOINT = "";
+const BOOKING_EMAIL = "resa.maumad@gmail.com";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -17,48 +16,36 @@ links.addEventListener("click", (e) => {
   }
 });
 
-// "Ask about this tour" pre-selects the tour in the form
-const tourSelect = document.getElementById("tour-select");
-document.querySelectorAll(".card-link[data-tour]").forEach((link) => {
-  link.addEventListener("click", () => {
-    tourSelect.value = link.dataset.tour;
-  });
-});
-
-// Enquiry form
+// Enquiry form: opens the visitor's email app with the details filled in
 const form = document.getElementById("enquiry-form");
 const status = form.querySelector(".form-status");
 
-form.addEventListener("submit", async (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   status.className = "form-status";
 
-  const name = form.elements.name.value.trim();
-  const email = form.elements.email.value.trim();
+  const f = form.elements;
+  const name = f.name.value.trim();
+  const email = f.email.value.trim();
   if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     status.textContent = "Please enter your name and a valid email address.";
     status.classList.add("error");
     return;
   }
 
-  if (!FORM_ENDPOINT) {
-    status.textContent = "Enquiries aren't connected yet. Please check back soon.";
-    status.classList.add("error");
-    return;
-  }
+  const subject = `Trip enquiry: ${f.trip.value}`;
+  const body = [
+    `Name: ${name}`,
+    `Email: ${email}`,
+    `Trip: ${f.trip.value}`,
+    `Travellers: ${f.travellers.value}`,
+    `Preferred dates: ${f.dates.value.trim() || "-"}`,
+    "",
+    f.message.value.trim(),
+  ].join("\n");
 
-  try {
-    const res = await fetch(FORM_ENDPOINT, {
-      method: "POST",
-      headers: { Accept: "application/json" },
-      body: new FormData(form),
-    });
-    if (!res.ok) throw new Error(res.statusText);
-    form.reset();
-    status.textContent = `Thanks, ${name}! We'll reply within two working days.`;
-    status.classList.add("ok");
-  } catch {
-    status.textContent = "Something went wrong sending your enquiry. Please try again.";
-    status.classList.add("error");
-  }
+  window.location.href =
+    `mailto:${BOOKING_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  status.textContent = `Your email app should open now. If it doesn't, write to ${BOOKING_EMAIL}.`;
+  status.classList.add("ok");
 });
