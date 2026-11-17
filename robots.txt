@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kyle-project.github.io/MauMad-Madagascar-Website/sitemap.xml
